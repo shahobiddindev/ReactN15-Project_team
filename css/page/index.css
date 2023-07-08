@@ -1,1 +1,4 @@
 @import "../base/global.css";
+p {
+  background-color: aqua;
+}
