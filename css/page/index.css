@@ -1,4 +1,6 @@
 @import "../base/global.css";
+@import "../base/reset.css";
+
 p {
-  background-color: aqua;
+  background-color: var(--primary-text);
 }
