@@ -1,1 +1,110 @@
 @import "../base/global.css";
+:root {
+  --menu-color: #525560;
+  --menuhover-color: #0B0706;
+  --navh-color: #1D2130;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* #header {
+  padding: 24px 0;
+} */
+
+.container-first {
+  margin: 0 auto;
+  max-width:calc(1440px - 110px - 110px - 40px) ;
+}
+
+.menu ul { 
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.menu ul li a {
+color: var(--menu-color);
+font-size: 20px;
+}
+
+.menu ul li a:hover {
+  color: var(--menuhover-color);
+}
+
+.btn {
+padding-bottom: 5px;
+}
+
+.btn button {
+padding: 12px 32px;
+gap: 10px;
+border: 1px solid black;
+border-radius: 4px;
+background: white;
+}
+
+.btn button:hover {
+color: white;
+background: black;
+}
+
+.nav p {
+text-align: center;
+color: var(--menu-color );
+padding-top: 16px;
+font-family: Roboto;
+font-size: 16px;
+font-weight: 500;
+line-height: 160%;
+}
+
+.nav h1{
+text-align: center;
+color: var(--navh-color);
+font-family: Roboto;
+font-size: 56px;
+font-style: normal;
+}
+
+.img {
+height: 84px;
+flex-shrink: 0;
+padding-top: 40px;
+border-radius: 12px;
+}
+
+.container-second {
+ margin: 0 auto;
+  max-width:calc(1440px - 238px - 238px - 40px) ;
+}
+
+
+.report h2 {
+  color: var(--navh-color);
+  font-family: Roboto;
+  font-size: 45px;
+  font-style: normal;
+  padding-top: 90px;
+}
+
+.report h1 {
+  color: var(--navh-color);
+  font-family: Roboto;
+  font-size: 27px;
+  font-style: normal;
+  padding-top: 40px;
+}
+.report p {
+color: var(--menu-color );
+padding-top: 16px;
+font-family: Roboto;
+font-size: 15px;
+font-weight: 500;
+line-height: 160%;
+}
