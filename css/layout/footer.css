@@ -59,9 +59,11 @@ footer {
    line-height: 140%;
    padding-bottom: 32px;
 }
-.footer__input{
+
+.footer__input {
    position: relative;
 }
+
 .footer__input input {
    border-radius: 4px;
    border: 1px solid rgba(235, 240, 249, 0.30);
@@ -92,4 +94,38 @@ footer {
    background: #FFF;
    backdrop-filter: blur(40px);
    padding: 20px 32px;
+}
+
+@media only screen and (max-width:1120px) {
+   .footer__container {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+   }
+   .footer__left {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+   }
+
+   .footer_menu {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      gap: 90px;
+      padding-right: 60px;
+   }
+}
+
+@media only screen and (max-width:550px) {
+   .footer__right{
+      display: none;
+   }
+   .footer_menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 90px;
+      padding-right: 60px;
+      text-align: center;
+   }
 }

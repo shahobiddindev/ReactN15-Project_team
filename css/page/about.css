@@ -453,9 +453,10 @@
 /* read end */
 
 /* event start */
-#event{
+#event {
    padding-bottom: 96px;
 }
+
 .event__hero {
    display: flex;
    align-items: center;
@@ -509,12 +510,14 @@
    align-items: center;
    gap: 23px;
 }
-.event__date{
+
+.event__date {
    display: flex;
    flex-direction: column;
    justify-content: flex-start;
 
 }
+
 .event__date h2 {
    color: var(--primary-text, #1D2130);
    font-size: 48px;
@@ -534,10 +537,11 @@
    text-transform: uppercase;
 }
 
-.content__hero{
+.content__hero {
    padding-top: 10px;
    padding-bottom: 8px;
 }
+
 .content__hero h3 {
    color: var(--primary-text, #1D2130);
    font-size: 16px;
@@ -555,7 +559,114 @@
    font-weight: 700;
    line-height: 150%;
 }
-.event__btn{
+
+.event__btn {
    vertical-align: middle;
    margin: auto auto;
+}
+
+/* responsive */
+@media only screen and (max-width:1000px) {
+   .awards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 100px;
+      padding-left: 85px;
+      padding-right: 85px;
+      padding-bottom: 96px;
+   }
+
+   .award__reco {
+      border-radius: 12px;
+      background: var(--black, #0B0706);
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      padding-top: 64px;
+      padding-bottom: 64px;
+   }
+   .team__join {
+      padding: 94px 100px;
+      background: url(../../images/about/join.png) no-repeat center;
+   }
+}
+
+@media only screen and (max-width:900px) {
+   .team__item {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 32px;
+      row-gap: 48px;
+      padding-bottom: 96px;
+   }
+   .read__item {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 20px;
+      padding-top: 45px;
+   }
+   .event__item {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 24px;
+      padding-top: 48px;
+   }
+}
+
+@media only screen and (max-width:800px) {
+   .nav__link {
+      display: none;
+   }
+
+   .hamburger {
+      display: inline-block;
+      padding-right: 20px;
+      cursor: pointer;
+   }
+}
+
+@media only screen and (max-width:700px) {
+   .know__content {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      padding-top: 32px;
+      padding-bottom: 320px;
+   }
+
+   .our__header {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      gap: 70px;
+      padding-left: 70px;
+      padding-right: 70px;
+      padding-bottom: 96px;
+   }
+   .team__join {
+      padding: 94px 20px;
+      background: url(../../images/about/join.png) no-repeat center;
+   }
+}
+
+@media only screen and (max-width:500px) {
+   .awards {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 100px;
+      padding-left: 85px;
+      padding-right: 85px;
+      padding-bottom: 96px;
+   }
+   .team__item {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      column-gap: 32px;
+      row-gap: 48px;
+      padding-bottom: 96px;
+   }
+   .read__item {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      column-gap: 20px;
+      padding-top: 45px;
+   }
 }

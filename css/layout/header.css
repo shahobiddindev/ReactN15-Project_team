@@ -60,3 +60,52 @@
    /* box-shadow: inset #0B0706; */
    box-shadow: 0 0 15px #0B0706;
 }
+/* toogle */
+.hamburger {
+   display: none;
+}
+#navbar-responsive {
+   position: fixed;
+   background: url(../images/background.png);
+   background: #FFF;
+   top: 0;
+   bottom: 0;
+   left: -100%;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: 0.5s;
+}
+
+.res-nav-list {
+   list-style-type: none;
+
+}
+
+.res-nav-item {
+   margin: 30px 0px;
+   text-align: center;
+
+}
+
+.res-nav-link {
+   font-size: 30px;
+   color: #0B0706;
+   text-decoration: none;
+
+}
+
+.res-nav-btn {
+   padding: 10px 20px;
+   font-size: 30px;
+}
+
+#navbar-close {
+   position: absolute;
+   top: 20px;
+   right: 55px;
+   background-color: transparent;
+   border: none;
+   cursor: pointer;
+}
