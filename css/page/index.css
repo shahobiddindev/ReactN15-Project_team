@@ -1,5 +1,10 @@
 @import "../base/global.css";
-
+.donation_btn {
+  color: #ffffff;
+}
+.donation_btn:hover {
+  color: #000000;
+}
 .home {
   background-image: url(../../images/home-img/bgk_img.png);
   width: 100%;
